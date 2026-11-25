@@ -1,6 +1,6 @@
 # create db
-create database assignment1;
-use assignment1;
+create database f_details;
+use f_details;
 # create table
 create table food(
 foodid int primary key,
