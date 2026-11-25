@@ -1,0 +1,16 @@
+# create db
+create database assignment1;
+use assignment1;
+# create table
+create table food(
+foodid int primary key,
+foodname varchar(20) not null,
+fprice decimal(10,2) default 5,
+fqty decimal(5,2) not null
+);
+desc food;
+insert into food (foodid,foodname,fprice,fqty) values (101,"idly",12.04,3),(102,"dosa",40.90,5.02),(103,"poori",30.75,9),(104,"pongal",35.67,2.90);
+select * from food;
+#inserting a food without price
+insert into food(foodid,foodname,fqty) values (105,"pizza",3);
+select * from food;
